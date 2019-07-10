@@ -246,32 +246,7 @@
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="{{asset('bootstrap/img/ui-sam.jpg')}}" class="img-circle" width="80"></a></p>
           <h5 class="centered">Sam Soffes</h5>
-          <li class="mt">
-            <a href="/calendar">
-              <i class="fa fa-dashboard"></i>
-              <span>DASHBOARD</span>
-              </a>
-          </li>
-        <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-cogs"></i>
-              <span>Components</span>
-              </a>
-            <ul class="sub">
-              <li><a href="index">Calendar</a></li>
-              </ul>
-          </li>
-          @if(auth()->user()->role!='User')
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-book"></i>
-              <span>Extra Pages</span>
-              </a>
-            <ul class="sub">
-              <li><a href="/login">Login</a></li>
-              <li><a href="/lock">Lock Screen</a></li>
-              </ul>
-          </li>
+          @if(auth()->user()->role !='User')
          <li>
             <a class="active" href="/inbox">
               <i class="fa fa-envelope"></i>
@@ -280,13 +255,10 @@
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="/chat-js">
               <i class=" fa fa-bar-chart-o"></i>
-              <span>Charts</span>
+              <span>Visualization</span>
               </a>
-            <ul class="sub">
-              <li><a href="/chat-js">Chartjs</a></li>
-            </ul>
           </li>
           <li class="sub-menu">
             <a href="javascript:;">

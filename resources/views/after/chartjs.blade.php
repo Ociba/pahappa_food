@@ -20,7 +20,7 @@
   <!-- Custom styles for this template -->
   <link href="{{asset('bootstrap/css/style.css')}}" rel="stylesheet">
   <link href="{{asset('bootstrap/css/style-responsive.css')}}" rel="stylesheet">
-  
+
 </head>
 
 <body>
@@ -247,35 +247,7 @@
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="{{asset('bootstrap/img/ui-sam.jpg')}}" class="img-circle" width="80"></a></p>
           <h5 class="centered">Sam Soffes</h5>
-          <li class="mt">
-            <a href="index.html">
-              <i class="fa fa-PAHAPboard"></i>
-              <span>DASHBOARD</span>
-              </a>
-          </li>
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-cogs"></i>
-              <span>Components</span>
-              </a>
-            <ul class="sub">
-              <li><a href="index">Calendar</a></li>
-              </ul>
-          </li>
-          @if(auth()->user()->role!='User')
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-book"></i>
-              <span>Extra Pages</span>
-              </a>
-            <ul class="sub">
-              
-              <li><a href="/login">Login</a></li>
-              <li><a href="/lock">Lock Screen</a></li>
-              </ul>
-          </li>
-          
-          
+          @if(auth()->user()->role !='User')
           <li>
             <a href="/inbox">
               <i class="fa fa-envelope"></i>
@@ -284,23 +256,16 @@
               </a>
           </li>
           <li class="sub-menu">
-            <a class="active" href="javascript:;">
+            <a class="active" href="/chat-js">
               <i class=" fa fa-bar-chart-o"></i>
-              <span>Charts</span>
+              <span>Visualization</span>
               </a>
-            <ul class="sub">
-              <li class="active"><a href="chartjs.html">Chartjs</a></li>
-              </ul>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="/chat-room">
               <i class="fa fa-comments-o"></i>
               <span>Chat Room</span>
               </a>
-            <ul class="sub">
-              
-              <li><a href="/chat-room"> Chat Room</a></li>
-            </ul>
           </li>
         </ul>
         @endif
@@ -410,7 +375,7 @@
   <!--script for this page-->
   <script src="{{asset('bootstrap/lib/chart-master/Chart.js')}}"></script>
   <script src="{{asset('bootstrap/lib/chartjs-conf.js')}}"></script>
-  
+
 </body>
 
 </html>

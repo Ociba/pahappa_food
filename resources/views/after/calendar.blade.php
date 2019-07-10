@@ -247,34 +247,13 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="{{asset('bootstrap/img/pah.png')}}" class="img-circle" width="80"></a></p>
-          <li class="mt">
-            <a href="/calendar">
-              <i class="fa fa-PAHAPboard"></i>
-              <span>DASHBOARD</span>
-              </a>
-          </li>
           <li class="sub-menu">
-            <a class="active" href="javascript:;">
+            <a class="active" href="/index">
               <i class="fa fa-cogs"></i>
-              <span>Components</span>
+              <span>Home</span>
               </a>
-            <ul class="sub">
-              
-              <li class="active"><a href="calendar.html">Calendar</a></li>
-              
-              </ul>
           </li>
-          @if(auth()->user()->role!='User')
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-book"></i>
-              <span>Extra Pages</span>
-              </a>
-            <ul class="sub">
-              <li><a href="/login">Login</a></li>
-              <li><a href="/lock">Lock Screen</a></li>
-              </ul>
-          </li>
+          @if(auth()->user()->role !='User')
           <li>
             <a href="/inbox">
               <i class="fa fa-envelope"></i>
@@ -380,7 +359,7 @@
   <script src="{{asset('bootstrap/lib/common-scripts.js')}}"></script>
   <!--script for this page-->
   <script src="{{asset('bootstrap/lib/calendar-conf-events.js')}}"></script>
-  
+
 </body>
 
 </html>
