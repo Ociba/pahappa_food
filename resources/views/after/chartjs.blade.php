@@ -250,7 +250,7 @@
           <li class="mt">
             <a href="index.html">
               <i class="fa fa-PAHAPboard"></i>
-              <span>PAHAPboard</span>
+              <span>DASHBOARD</span>
               </a>
           </li>
           <li class="sub-menu">
@@ -262,6 +262,7 @@
               <li><a href="index">Calendar</a></li>
               </ul>
           </li>
+          @if(auth()->user()->role!='User')
           <li class="sub-menu">
             <a href="javascript:;">
               <i class="fa fa-book"></i>
@@ -302,6 +303,7 @@
             </ul>
           </li>
         </ul>
+        @endif
         <!-- sidebar menu end-->
       </div>
     </aside>

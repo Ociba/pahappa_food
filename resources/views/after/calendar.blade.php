@@ -248,9 +248,9 @@
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="{{asset('bootstrap/img/pah.png')}}" class="img-circle" width="80"></a></p>
           <li class="mt">
-            <a href="index.html">
+            <a href="/calendar">
               <i class="fa fa-PAHAPboard"></i>
-              <span>PAHAPboard</span>
+              <span>DASHBOARD</span>
               </a>
           </li>
           <li class="sub-menu">
@@ -264,6 +264,7 @@
               
               </ul>
           </li>
+          @if(auth()->user()->role!='User')
           <li class="sub-menu">
             <a href="javascript:;">
               <i class="fa fa-book"></i>
@@ -300,6 +301,7 @@
             </ul>
           </li>
         </ul>
+        @endif
         <!-- sidebar menu end-->
       </div>
     </aside>

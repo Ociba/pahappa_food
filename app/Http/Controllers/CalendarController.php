@@ -13,8 +13,12 @@ class CalendarController extends Controller
      */
     public function index()
     {
-        //
-        return view('after.calendar');
+        if(auth()->user()->role == "Admin" || auth()->user()->role == "Accountant"){
+            return redirect('/inbox');
+        }
+        else{
+            return view('after.calendar');
+        }
     }
 
     /**

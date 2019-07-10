@@ -249,9 +249,9 @@
           <p class="centered"><a href="profile.html"><img src="{{asset('bootstrap/img/ui-sam.jpg')}}" class="img-circle" width="80"></a></p>
           <h5 class="centered">Sam Soffes</h5>
           <li class="mt">
-            <a href="index.html">
+            <a href="/calendar">
               <i class="fa fa-PAHAPboard"></i>
-              <span>PAHAPboard</span>
+              <span>DASHBOARD</span>
               </a>
           </li>
           
@@ -265,7 +265,8 @@
               <li><a href="/index">Calendar</a></li>
               </ul>
           </li>
-          <li class="sub-menu">
+          @if(auth()->user()->role !='User')
+          <!-- <li class="sub-menu">
             <a href="javascript:;">
               <i class="fa fa-book"></i>
               <span>Extra Pages</span>
@@ -274,7 +275,7 @@
               <li><a href="/login">Login</a></li>
               <li><a href="/lock">Lock Screen</a></li>
               </ul>
-          </li>
+          </li> -->
           <li>
             <a href="/inbox">
               <i class="fa fa-envelope"></i>
@@ -302,6 +303,7 @@
           </li>
           
         </ul>
+        @endif
         <!-- sidebar menu end-->
       </div>
     </aside>
