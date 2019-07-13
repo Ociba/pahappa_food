@@ -46,7 +46,10 @@ class TransactionsController extends Controller
      */
     public function show(transactions $transactions)
     {
-        //
+        $all_requests = transactions::where('transaction_type','1')
+        ->join('users','transactions.user_id','users.id')->paginate('10');
+        return view('after.inbox',['all_requests'=>$all_requests]);
+
     }
 
     /**
