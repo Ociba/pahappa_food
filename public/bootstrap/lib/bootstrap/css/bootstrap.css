@@ -1317,6 +1317,7 @@ mark,
 }
 .text-center {
   text-align: center;
+  margin-top:50px;
 }
 .text-justify {
   text-align: justify;
@@ -6754,4 +6755,8 @@ button.close {
     display: none !important;
   }
 }
+
+
+
+
 /*# sourceMappingURL=bootstrap.css.map */

@@ -26,3 +26,5 @@ Route::get('/lock','LockscreenController@index');
 
 });
 Auth::routes();
+
+Route::get('/grid',function(){return view('layouts.grid');});
