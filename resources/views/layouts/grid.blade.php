@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body >
-
+<h1 style="text-align: center; background-color:green; color:white;">Programming is interesting
+ <span class="pull-right">
+<i class="fa fa-users" > Landing page</i>
+</span>
+</h1>
+<!--<hr style="background-color: #0066ff; border: 25px solid #ff99ff; padding: 0px;">-->
 <div class="text-center">
 <p style="color:blue;">Please choose your destination
 <a href="#" class="btn btn-danger btn-sm">

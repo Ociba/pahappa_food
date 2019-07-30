@@ -14,8 +14,7 @@ class InboxController extends Controller
      */
     public function index()
     {
-        $all_requests = transactions::where('transaction_type','1')
-        ->join('users','transactions.user_id','users.id')->paginate('10');
+        $all_requests = transactions::join('users','transactions.user_id','users.id')->paginate('10');
         return view('after.inbox',['all_requests'=>$all_requests]);
     }
 
